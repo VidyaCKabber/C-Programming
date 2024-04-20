@@ -38,3 +38,19 @@ main.c:7:18: error: ‘i’ undeclared (first use in this function)
     7 |     printf("%d ",i);
       |        
 */
+
+#include<stdio.h>
+
+int main()
+{
+for(int i = 0; i<10; i++)
+        printf("%d ",i);
+        printf("upGrad");
+        
+return 0;
+}
+
+
+// 0 1 2 3 4 5 6 7 8 9 upGrad
+
+// You can definitely use the for loop without using curly braces, but in this case, only the first statement following the loop definition is considered to belong to the loop body. Hence, the statement printf("%d ",i); forms part of the for loop, but the statement printf("upGrad"); does not form part of the for loop. Therefore, the values of the variable i will be printed in the loop, and after the loop ends, upGrad will be printed once.
